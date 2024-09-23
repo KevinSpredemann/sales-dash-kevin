@@ -1,43 +1,43 @@
-import { Theme } from "@/types";
+import { Theme } from '@/types'
 
 export const lightTheme: Theme = {
-    appBackground: '#FFF',
-    appColor: '#000',
-    appDefaultStroke: '#E0E0E0',
-    appLogo: 'dnc-logo-black.svg',
-    appSkeletonFrom: '#EEE',
-    appSkeletonTo: '#CCC',
-    buttons: {
-        alert: '#E80000',
-        alertColor: '#FFF',
-        alertHover: 'D80000',
-        disabled: '#CCC',
-        disabledColor: '#666',
-        primary: '#0C70F2',
-        primaryColor: '#FFF',
-        primaryHover: '#0061DE',
-    },
-    card: {
-        alert: '#E80000',
-        background: '#FFF',
-        border: '#E0E0E0',
-        success: '#008000',
-        warning: '#F7A3000',
-    },
-    textInput: {
-        active: '#FFF',
-        activeColor: '#000',
-        borderColor: '#E0E0E0',
-        disabled: '#EEE',
-        disabledBorderColor: '#E0E0E0',
-        disabledColor: '#666',
-        placeholderColor: '#666',
-    },
-    typographies: {
-        error: '#FF0202',
-        subtitle: '#666',
-        success: '#008000',
-    }
+  appBackground: '#FFF',
+  appColor: '#000',
+  appDefaultStroke: '#E0E0E0',
+  appLogo: 'dnc-logo-black.svg',
+  appSkeletonFrom: '#EEE',
+  appSkeletonTo: '#CCC',
+  buttons: {
+    alert: '#E80000',
+    alertColor: '#FFF',
+    alertHover: 'D80000',
+    disabled: '#CCC',
+    disabledColor: '#666',
+    primary: '#0C70F2',
+    primaryColor: '#FFF',
+    primaryHover: '#0061DE',
+  },
+  card: {
+    alert: '#E80000',
+    background: '#FFF',
+    border: '#E0E0E0',
+    success: '#008000',
+    warning: '#F7A3000',
+  },
+  textInput: {
+    active: '#FFF',
+    activeColor: '#000',
+    borderColor: '#E0E0E0',
+    disabled: '#EEE',
+    disabledBorderColor: '#E0E0E0',
+    disabledColor: '#666',
+    placeholderColor: '#666',
+  },
+  typographies: {
+    error: '#FF0202',
+    subtitle: '#666',
+    success: '#008000',
+  },
 }
 
 export const darkTheme: Theme = {
@@ -79,5 +79,3 @@ export const darkTheme: Theme = {
     success: '#008000',
   },
 }
-
-
