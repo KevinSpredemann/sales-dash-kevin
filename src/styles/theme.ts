@@ -22,7 +22,7 @@ export const lightTheme: Theme = {
     background: '#FFF',
     border: '#E0E0E0',
     success: '#008000',
-    warning: '#F7A3000',
+    warning: '#F7A300',
   },
   textInput: {
     active: '#FFF',
@@ -62,7 +62,7 @@ export const darkTheme: Theme = {
     background: '#0F1535',
     border: '#21497D',
     success: '#008000',
-    warning: '#F7A3000',
+    warning: '#F7A300',
   },
   textInput: {
     active: '#0F1535',
