@@ -11,7 +11,7 @@ function Profile() {
       <CardComponent>
         <StyledButton className="primary" onClick={themeContext?.toggleTheme}>
           Trocar para tema
-          {themeContext?.appTheme === 'light' ? 'escuro' : 'claro'}
+          {themeContext?.appTheme === 'light' ? ' escuro' : ' claro'}
         </StyledButton>
       </CardComponent>
     </>
