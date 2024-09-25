@@ -1,5 +1,6 @@
 export * from './theme'
 export * from './customChart'
+export * from './appThemeContext'
 export * from './formComponents'
 export * from './customTable'
 export * from './avatarLists'
