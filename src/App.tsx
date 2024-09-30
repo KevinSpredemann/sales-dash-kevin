@@ -1,13 +1,19 @@
-import { BrowserRouter as Router, Route, Routes, Navigate, Outlet } from 'react-router-dom'
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+  Outlet,
+} from 'react-router-dom'
 import Cookies from 'js-cookie'
 import { Login, Registration, Home, Leads, Profile } from './pages'
 
 function App() {
   const ProtectedRoute = () => {
     const checkAuthCookie = Cookies.get('Authorization')
-    if(!checkAuthCookie){
+    if (!checkAuthCookie) {
       alert('Autenticação necessária!')
-      return <Navigate to='/' replace />
+      return <Navigate to="/" replace />
     }
 
     return <Outlet />
