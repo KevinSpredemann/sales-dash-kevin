@@ -24,9 +24,7 @@ import {
   ProfileEditableData,
   MessageProps,
 } from '@/types'
-import { profile } from 'console'
 import Cookies from 'js-cookie'
-
 function Profile() {
   const themeContext = useContext(AppThemeContext)
 
