@@ -30,7 +30,7 @@ function Profile() {
 
   // HOOKS
 
-  const [uptateMessage, setUpdateMessage] = useState<MessageProps>({
+  const [updateMessage, setUpdateMessage] = useState<MessageProps>({
     type: 'success',
     msg: '',
   })
@@ -43,6 +43,7 @@ function Profile() {
       })
     }, 3000)
   }
+  
   const {
     data: profileData,
     loading: profileLoading,
@@ -161,7 +162,7 @@ function Profile() {
                             : 'Exluir minha conta',
                         },
                       ]}
-                      message={uptateMessage}
+                      message={updateMessage}
                     />
                   </>
                 )}
