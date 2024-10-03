@@ -7,7 +7,7 @@ import {
   CustomChart,
   StyledH2,
   StyledH3,
-  StyledSpan
+  StyledSpan,
 } from '@/components'
 import { Container, Grid } from '@mui/material'
 
@@ -16,12 +16,12 @@ import { useGet } from '@/hooks'
 
 // UTILS
 import { currencyConverter, highlightTextConverter } from '@/utils'
+import { Link } from 'react-router-dom'
 
 // TYPES
 import { HightlightsData, StarsData, NewsData, CustomChartProps } from '@/types'
 
 function Home() {
-
   const {
     data: hightlightsData,
     loading: hightlightsLoading,
@@ -55,7 +55,7 @@ function Home() {
   return (
     <>
       <Header />
-      <Container className='mb-2' maxWidth="lg">
+      <Container className="mb-2" maxWidth="lg">
         <Grid container spacing={4}>
           {!hightlightsError && (
             <>
@@ -118,11 +118,13 @@ function Home() {
                 >
                   {!hightlightsLoading && hightlightsData && (
                     <>
-                      <StyledH2 className="mb-1">Leads contactados</StyledH2>
-                      <StyledH3 className="mb-1" size={40} lineheight={40}>
-                        {hightlightsData[2].value}
-                      </StyledH3>
-                      <StyledSpan>{hightlightsData[2].subtitle}</StyledSpan>
+                      <Link to="/leads">
+                        <StyledH2 className="mb-1">Leads contactados</StyledH2>
+                        <StyledH3 className="mb-1" size={40} lineheight={40}>
+                          {hightlightsData[2].value}
+                        </StyledH3>
+                        <StyledSpan>{hightlightsData[2].subtitle}</StyledSpan>
+                      </Link>
                     </>
                   )}
                 </CardComponent>
@@ -211,7 +213,9 @@ function Home() {
             {!salesYearError && (
               <CardComponent
                 className={
-                  salesYearLoading ? 'skeleton-loading skeleton-loading-mh-2' : ''
+                  salesYearLoading
+                    ? 'skeleton-loading skeleton-loading-mh-2'
+                    : ''
                 }
               >
                 {!salesYearLoading && salesYearData && (
