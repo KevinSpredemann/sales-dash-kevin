@@ -1,6 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { CreateProfileData } from '@/types'
-import { act } from 'react'
 
 const initialState: Omit<CreateProfileData, 'name' | 'phone' | 'password'> = {
   email: '',
