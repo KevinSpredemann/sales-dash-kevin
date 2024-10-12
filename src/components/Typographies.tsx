@@ -50,5 +50,3 @@ export const StyledUl = styled.ul<TypographiesProps>`
     }
   } 
 `
-
-

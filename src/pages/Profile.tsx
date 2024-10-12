@@ -182,7 +182,7 @@ function Profile() {
                 Trocar para tema
                 {themeContext?.appTheme === 'light' ? ' escuro' : ' claro'}
               </StyledButton>
-              <StyledButton id='logout' className="alert" onClick={Logout}>
+              <StyledButton id="logout" className="alert" onClick={Logout}>
                 Logout
               </StyledButton>
             </CardComponent>

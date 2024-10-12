@@ -110,14 +110,14 @@ function Leads() {
           <Grid item xs={12} sm={7}>
             <CardComponent
               className={
-                leadsLoading
-                  ? 'skeleton-loading skeleton-loading-mh-2'
-                  : ''
+                leadsLoading ? 'skeleton-loading skeleton-loading-mh-2' : ''
               }
             >
               {!leadsError && !leadsLoading && (
                 <>
-                  <StyledH2 id='leads-title' className="mb-1">Meus leads</StyledH2>
+                  <StyledH2 id="leads-title" className="mb-1">
+                    Meus leads
+                  </StyledH2>
                   {leadsData?.length ? (
                     <CustomTable
                       headers={['Nome', 'Email', 'Telefone', '']}
