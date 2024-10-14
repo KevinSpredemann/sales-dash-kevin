@@ -59,7 +59,7 @@ export const useGet = <T>(endpoint: string, config?: AxiosRequestConfig) => {
         url: endpoint,
         method: 'GET',
         headers: {
-          'Authorization': `Bearer ${Cookies.get('Authorization')}`,
+          Authorization: `Bearer ${Cookies.get('Authorization')}`,
           'Content-Type': 'application/json',
           ...config?.headers,
         },
@@ -96,7 +96,7 @@ export const usePut = <T>(endpoint: string) => {
         method: 'PUT',
         data: putData,
         headers: {
-          'Authorization': `Bearer ${Cookies.get('Authorization')}`,
+          Authorization: `Bearer ${Cookies.get('Authorization')}`,
           'Content-Type': 'application/json',
           ...config?.headers,
         },

@@ -6,7 +6,7 @@ import { pxToRem } from '@/utils'
 export const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
-  row-gap: ${pxToRem(16)} ;
+  row-gap: ${pxToRem(16)};
 `
 
 function FormComponent(props: FormComponentProps) {

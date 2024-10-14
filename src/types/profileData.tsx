@@ -10,7 +10,7 @@ export interface ProfileData extends ProfileEditableData {
 export interface CreateProfileData {
   name: string
   email: string
-  phone: string 
+  phone: string
   password: string
   message?: string | null
 }

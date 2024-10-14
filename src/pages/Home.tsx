@@ -70,7 +70,7 @@ function Home() {
                 >
                   {!hightlightsLoading && hightlightsData && (
                     <>
-                      <StyledH2 className="mb-1">
+                      <StyledH2 className="mb-1" id='total-sales-title'>
                         Total de vendas do mês
                       </StyledH2>
                       <StyledH3 className="mb-1" size={40} lineheight={40}>
@@ -83,7 +83,7 @@ function Home() {
               </Grid>
               <Grid item xs={12} md={4}>
                 <CardComponent
-                id='month-goals'
+                  id="month-goals"
                   className={
                     hightlightsData
                       ? hightlightsData[1].subtitle
@@ -112,7 +112,7 @@ function Home() {
               </Grid>
               <Grid item xs={12} md={4}>
                 <CardComponent
-                id='total-leads'
+                  id="total-leads"
                   className={
                     hightlightsLoading
                       ? 'skeleton-loading skeleton-loading-mh-1'
@@ -137,7 +137,7 @@ function Home() {
           <Grid item xs={12} md={7}>
             {!salesMonthError && (
               <CardComponent
-              id='month-sales-chart'
+                id="month-sales-chart"
                 className={
                   salesMonthLoading
                     ? 'skeleton-loading skeleton-loading-mh-2'
@@ -160,7 +160,7 @@ function Home() {
           <Grid item xs={12} md={5}>
             {!salesStartsError && (
               <CardComponent
-              id='sales-stars'
+                id="sales-stars"
                 className={
                   salesStartsLoading
                     ? 'skeleton-loading skeleton-loading-mh-2'
@@ -187,7 +187,7 @@ function Home() {
           <Grid item xs={12} md={5}>
             {!newsError && (
               <CardComponent
-              id='news'
+                id="news"
                 className={
                   newsLoading ? 'skeleton-loading skeleton-loading-mh-2' : ''
                 }
@@ -218,7 +218,7 @@ function Home() {
           <Grid item xs={12} md={7}>
             {!salesYearError && (
               <CardComponent
-              id='year-sales-chart'
+                id="year-sales-chart"
                 className={
                   salesYearLoading
                     ? 'skeleton-loading skeleton-loading-mh-2'

@@ -10,28 +10,32 @@ const StyledHeader = styled.header`
   margin-bottom: ${pxToRem(37)};
   width: 100%;
 `
-function Header(){
-    return (
-      <StyledHeader>
-        <Container maxWidth="lg">
-          <Box
-            sx={{
-              alignItems: 'center',
-              display: 'flex',
-              justifyContent: 'space-between',
-              height: pxToRem(64),
-            }}
-          >
-            <Link to="/home">
-              <Logo height={30} width={73} />
-            </Link>
-            <Link to="/perfil">
-              <Avatar  alt='DNC Avatar' src='/Avatar.svg' sx={{ width: pxToRem(40), height: pxToRem(40)}}/>
-            </Link>
-          </Box>
-        </Container>
-      </StyledHeader>
-    )
+function Header() {
+  return (
+    <StyledHeader>
+      <Container maxWidth="lg">
+        <Box
+          sx={{
+            alignItems: 'center',
+            display: 'flex',
+            justifyContent: 'space-between',
+            height: pxToRem(64),
+          }}
+        >
+          <Link to="/home">
+            <Logo height={30} width={73} />
+          </Link>
+          <Link to="/perfil">
+            <Avatar
+              alt="DNC Avatar"
+              src="/Avatar.svg"
+              sx={{ width: pxToRem(40), height: pxToRem(40) }}
+            />
+          </Link>
+        </Box>
+      </Container>
+    </StyledHeader>
+  )
 }
 
 export default Header

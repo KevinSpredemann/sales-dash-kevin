@@ -6,7 +6,7 @@ import { ThemeProvider } from 'styled-components'
 import { themeList } from '@/resources/themeList'
 
 describe('StyledButton', () => {
-  const renderComponent = (theme: Theme, classname?: string, props = {} ) =>
+  const renderComponent = (theme: Theme, classname?: string, props = {}) =>
     render(
       <ThemeProvider theme={theme}>
         <StyledButton className={classname} {...props} />
@@ -28,7 +28,9 @@ describe('StyledButton', () => {
         expect(asFragment()).toMatchSnapshot()
       })
       it('should match the snapshot with disabled status.', () => {
-        const { asFragment } = renderComponent(theme, 'primary', { disabled: true })
+        const { asFragment } = renderComponent(theme, 'primary', {
+          disabled: true,
+        })
         expect(asFragment()).toMatchSnapshot()
       })
     })

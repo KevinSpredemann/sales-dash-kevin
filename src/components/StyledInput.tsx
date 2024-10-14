@@ -6,8 +6,7 @@ export const StyledInput = styled.input<InputProps>`
   background-color: ${(props) => props.theme.textInput.active};
   color: ${(props) => props.theme.textInput.activeColor};
   border-radius: ${pxToRem(8)};
-  border: ${pxToRem(1)} solid
-    ${(props) => props.theme.textInput.borderColor};
+  border: ${pxToRem(1)} solid ${(props) => props.theme.textInput.borderColor};
   box-sizing: border-box;
   cursor: pointer;
   height: ${pxToRem(40)};
