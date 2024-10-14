@@ -1,0 +1,15 @@
+{
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "plugins": ["react", "prettier"],
+  "rules": {
+    // suas regras aqui
+  },
+  "overrides": [
+    {
+      "files": ["src/**/*.{js,jsx,ts,tsx}"],
+      "rules": {
+        // regras específicas para os arquivos em src
+      }
+    }
+  ]
+}
